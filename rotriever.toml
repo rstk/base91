@@ -1,0 +1,6 @@
+[package]
+name = "rstk/rbase91"
+author = "rstk"
+content_root = "./src"
+license = "MIT"
+version = "0.1.0"

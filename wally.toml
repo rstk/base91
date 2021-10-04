@@ -1,0 +1,9 @@
+[package]
+name = "rstk/rbase91"
+version = "0.1.0"
+license = "MIT"
+authors = ["rstk"]
+registry = "https://github.com/UpliftGames/wally-index"
+realm = "shared"
+
+[dependencies]
