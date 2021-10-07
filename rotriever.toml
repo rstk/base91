@@ -2,5 +2,5 @@
 name = "rstk/rbase91"
 author = "rstk"
 content_root = "./src"
-license = "MIT"
+license = "3-Clause BSD"
 version = "0.1.0"
