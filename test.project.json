@@ -8,6 +8,10 @@
 
 			"Test": {
 				"$path": "test"
+			},
+
+			"Base91": {
+				"$path": "src"
 			}
 		}
 	}

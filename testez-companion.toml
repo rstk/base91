@@ -1,2 +1,2 @@
-roots = ["ReplicatedStorage/Tests"]
+roots = ["ReplicatedStorage/Test"]
 extraOptions = {}

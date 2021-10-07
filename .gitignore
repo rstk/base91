@@ -1,0 +1,13 @@
+# Roblox files
+*.rbxl
+*.rbxlx
+*.rbxm
+*.rbxmx
+*.rbxl.lock
+*.rbxlx.lock
+
+# Wally lockfile
+wally.lock
+
+# Wally Packages
+/Packages
