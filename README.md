@@ -1,8 +1,8 @@
-# rBasE91
+# Base91
 
 BasE91 implementation in Luau.
 
-## Why use this?
+## Why use Base91?
 
 Using Base91 is a great way to store binary data to Roblox Datastores, as it will use most printable characters to encode your data, enabling the best possible compression, while still being very fast.
 

@@ -1,5 +1,5 @@
 [package]
-name = "rstk/rbase91"
+name = "rstk/base91"
 author = "rstk"
 content_root = "./src"
 license = "3-Clause BSD"
