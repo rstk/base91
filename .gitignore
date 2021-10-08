@@ -11,3 +11,6 @@ wally.lock
 
 # Wally Packages
 /Packages
+
+# Release notes
+RELNOTES.md

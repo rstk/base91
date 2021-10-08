@@ -17,8 +17,8 @@ do
 
 	for i = 1, 91 do
 		local char = string.sub(characters, i, i)
-		Alphabet[i-1] = char
-		InverseAlphabet[string.byte(char)] = i-1
+		Alphabet[i] = char
+		InverseAlphabet[string.byte(char)+1] = i-1
 	end
 end
 
@@ -61,7 +61,7 @@ function Base91.Encode(stream: Array<number>): string
 		local i0 = v % 91
 		local i1 = (v - i0) / 91
 
-		output[outputIndex] = Alphabet[i0] .. Alphabet[i1]
+		output[outputIndex] = Alphabet[i0+1] .. Alphabet[i1+1]
 		outputIndex += 1
 	end
 
@@ -76,7 +76,7 @@ function Base91.Decode(stream: string): Array<number>
 
 	for streamIndex = 1, #stream/2 do
 		local i0, i1 = string.byte(stream, streamIndex * 2 - 1, streamIndex * 2)
-		local value = InverseAlphabet[i1] * 91 + InverseAlphabet[i0]
+		local value = InverseAlphabet[i1+1] * 91 + InverseAlphabet[i0+1]
 		local nBits = value % 8192 > 88 and 13 or 14
 
 		if bufferIndex + nBits <= 32 then
